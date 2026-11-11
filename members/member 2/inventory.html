@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Inventory</title>
+    <link rel="stylesheet" href="inventory.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Resource Inventory</h1>
+    <p>Manage NGO resources and available stock</p>
+</header>
+
+<nav>
+    <a href="resources.html">Dashboard</a>
+    <a href="inventory.html">Inventory</a>
+    <a href="distribution.html">Distribution</a>
+</nav>
+
+<main>
+
+    <h2>Add New Resource</h2>
+
+    <form id="resourceForm">
+
+        <input type="text" id="resourceName"
+               placeholder="Resource Name" required>
+
+        <select id="category" required>
+            <option value="">Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Medicine">Medicine</option>
+            <option value="Education">Education</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <input type="number" id="quantity"
+               placeholder="Quantity" min="1" required>
+
+        <input type="text" id="unit"
+               placeholder="Unit (kg, pieces, packets)" required>
+
+        <textarea id="description"
+                  placeholder="Description"></textarea>
+
+        <button type="submit" class="btn">Add Resource</button>
+
+    </form>
+    <div class="search-section">
+
+    <input type="text" id="searchResource"
+           placeholder="Search resources by name...">
+
+    <select id="filterCategory">
+        <option value="">All Categories</option>
+        <option value="Food">Food</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Medicine">Medicine</option>
+        <option value="Education">Education</option>
+        <option value="Other">Other</option>
+    </select>
+
+</div>
+
+
+    <h2>Available Resources</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Resource Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Unit</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="resourceTable">
+        </tbody>
+    </table>
+
+</main>
+
+<footer>
+    <p>NGO Donation and Resource Management System</p>
+</footer>
+
+<script src="inventory_page.js"></script>
+
+</body>
+</html>

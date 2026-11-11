@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Resource Management</title>
+    <link rel="stylesheet" href="inventory.css">
+</head>
+
+<body>
+
+<header>
+    <h1>NGO Resource Management</h1>
+    <p>Manage resources efficiently and transparently</p>
+</header>
+
+<nav>
+    <a href="resources.html">Dashboard</a>
+    <a href="inventory.html">Inventory</a>
+    <a href="distribution.html">Distribution</a>
+</nav>
+
+<main>
+
+    <h2>Resource Dashboard</h2>
+    <p>Welcome to the Resource Management System.</p>
+
+    <section class="cards">
+
+        <div class="card">
+            <h3>Total Resources</h3>
+            <p id="totalResources">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Available Stock</h3>
+            <p id="availableStock">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Distributed Resources</h3>
+            <p id="distributedResources">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Low Stock Items</h3>
+            <p id="lowStock">0</p>
+        </div>
+
+    </section>
+    <section class="low-stock-alert">
+      <h2>⚠️ Low Stock Alert</h2>
+      <p id="lowStockMessage">Checking stock levels...</p>
+</section>
+
+    <section class="actions">
+
+        <h2>Manage Resources</h2>
+
+        <a href="inventory.html" class="btn">Manage Inventory</a>
+
+        <a href="distribution.html" class="btn">Distribute Resources</a>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>NGO Donation and Resource Management System</p>
+</footer>
+
+<script src="inventory.js"></script>
+
+</body>
+</html>
